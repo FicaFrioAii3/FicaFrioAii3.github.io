@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Chat</title>
+    <style>
+        /* Definir o fundo */
+        body {
+            background-image: url(foto/4.jpg);
+            background-color: #0B614B;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Garante que os elementos sigam a ordem vertical */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-image: url(foto/galaxy.jpg);
+            background-color: #298A08;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10; /* Garante que o cabeçalho fique sempre no topo */
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #31B404;
+            overflow: hidden;
+            text-align: center;
+            padding-top: 60px; /* Espaço extra para o menu não cobrir o conteúdo */
+            position: fixed;
+            top: 60px; /* O menu fica logo abaixo do cabeçalho fixo */
+            width: 100%;
+            z-index: 5; /* Garante que o menu fique abaixo do cabeçalho */
+        }
+
+        nav a {
+            color: white;
+            padding: 20px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0404B4; 
+            color: #DF0101;
+            transform: scale(1.4);
+        }
+
+        /* Título principal */
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            margin-top: 120px; /* Dá espaço acima do título para não colidir com o cabeçalho e menu */
+            font-weight: bold;
+        }
+
+        /* Container principal com os 2 quadros e o contexto central */
+        .quadros-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Alinha o conteúdo verticalmente */
+            width: 80%;
+            max-width: 1200px;
+            margin: 40px auto; /* Cria um espaço no topo para os quadros */
+        }
+
+        /* Cada quadro (div) com um fundo diferente */
+        .quadro {
+            width: 300px; /* Aumentar a largura da tabela*/
+            height: 450px; /* Aumentar a altura  da tabela*/
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+
+        .quadro-1 {
+            background-color: #31B404;
+            color: white;
+        }
+
+        .quadro-2 {
+            background-color: #31B404;
+            color: white;
+        }
+
+        /* Estilo da lista dentro de cada quadro */
+        .lista {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lista li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Mudando a cor do texto para cada quadro */
+        .quadro-1 li {
+            color: #0404B4; /* Cor amarela para o quadro 1 */
+        }
+
+        .quadro-2 li {
+            color: #0404B4; /* Cor laranja para o quadro 2 */
+        }
+
+        .quadro-3 li {
+            color: #0404B4; /* Cor branca para o quadro 3 */
+        }
+
+        .lista li:hover {
+            color: #DF0101; /* Cor de destaque quando passar o mouse */
+        }
+
+        /* Novo contexto centralizado */
+        .contexto-central {
+            background-color: #ffffff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Define a largura do contexto, similar aos quadros */
+            height: 450px; /* Define a altura para o contexto */
+            text-align: center;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Jogo de Chat</h1>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="">Início</a>
+        <a href="#">Novidades</a>
+        <a href="#">Contato</a>
+        <a href="file:///C:/Users/Sett/Desktop/Cria%C3%A7%C3%A3o/GALAXY.html">Tabela</a>
+        <a href="#">coleçôes</a>
+    </nav>
+
+    <!-- Título da seção -->
+    <h2>Aqui vamos atualizar vocês dos preços atuais de hoje em dia no servidor brasileiro</h2>
+
+    <!-- Container dos quadros -->
+    <div class="quadros-container">
+        <!-- Quadro 1 -->
+        <div class="quadro quadro-1">
+            <h3>Tabela Atualizada</h3>
+            <ul class="lista">
+                <li>Explosiva - 1/4 10/48 💥</li>
+                <li>Chave Diamante - 1/12 💎</li>
+                <li>Chave Simples - 1/2 10:24 🗝️</li>
+                <li>Mastique - 1/5 10/55 🌀</li>
+                <li>Luz Verde - 1/5-6 💚</li>
+                <li>Elétrica - 1/3 🔵</li>
+                <li>Boliche Verde - 35-40 / 1 🎳</li>
+                <li>Argola/Ouro - 1/3 10/35 🥇</li>
+               
+            </ul>
+        </div>
+
+        <!-- Contexto Central -->
+        <div class="contexto-central">
+            <h3>Itens Disponíveis:</h3>
+            <p>GL = LUZ VERDE 💚</p>
+            <p>FCB = BALA DE FOGO 🔥</p>
+            <p>ECB ou BCE = BALA EXPLOSIVA 💥</p>
+            <p>GCB = BALA DE OURO 🟡</p>
+            <p>EBB = BOLA ELÉTRICA 🔵</p>
+            <p>RBB = BOLA VERMELHA 🔴</p>
+            <p>GBB = BOLA VERDE 🟢</p>
+            <p>CLAY = MASTIQUE 🌀</p>
+            <p>DKEY = CHAVE DE DIAMANTE 💎</p>
+            <p>SKEY = CHAVE SIMPLES 🗝️</p>
+        </div>
+
+        <!-- Quadro 2 -->
+        <div class="quadro quadro-2">
+            <h3>Tabela Atualizada</h3>
+            <ul class="lista">
+                <li>Argola/Prata - 10/7 100/70 🥈</li>
+                <li>Argola/Bronze - 1/1 🥉</li>
+                <li>Mastique - 1/5 🌀</li>
+                <li>Fundo Planeta - 100/3 🌌</li>
+                <li>Fundo de Gangues - 25/1 🏰</li>
+                <li>Fuga da Prisão - 100/1 🚔</li>
+                <li>Fuga Diamante - 50/1 💎</li>
+                <li>Desejo Livre - 1/ 15 ou 2 (dependendo do desejo) 🤔</li>
+                <li>Cupom Banner - 2 Vermelho - 1/1 🎟v</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Galaxy chat play. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
